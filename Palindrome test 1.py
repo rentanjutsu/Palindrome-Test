@@ -10,11 +10,9 @@ while running:
     my_str = my_str.casefold()
 
     # make it suitable for comparison without the contents of forbidden
-    f = len(my_str)
-    for forbidden in f:
-        if f != forbidden:
-            final_str.append(f)
-
+    for int in my_str:
+        if int != forbidden:
+            final_str.append(int)
 
     # reverse the string
     rev_str = reversed(final_str)
