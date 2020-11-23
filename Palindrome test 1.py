@@ -2,20 +2,19 @@ forbidden = ('!', '?', '.', '...', '"')
 running = True
 final_str = []
 
-
 while running:
     # Program to check if a string is palindrome or not
-
     my_str = input('Enter Text: ')
 
-    # make it suitable for caseless comparison
+    # make it suitable for case-less comparison
     my_str = my_str.casefold()
 
     # make it suitable for comparison without the contents of forbidden
-    f = forbidden
-    for f in my_str:
+    f = len(my_str)
+    for forbidden in f:
         if f != forbidden:
             final_str.append(f)
+
 
     # reverse the string
     rev_str = reversed(final_str)
