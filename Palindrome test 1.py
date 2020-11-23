@@ -14,8 +14,7 @@ while running:
 
     # make it suitable for comparison without the contents of forbidden
     for letter in my_str:
-        if letter != forbidden:
-            final_str.append(letter)
+        final_str.append(letter)
 
     # reverse the string
     rev_str = reversed(final_str)
