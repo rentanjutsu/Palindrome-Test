@@ -1,25 +1,27 @@
 forbidden = ('!', '?', '.', '...', '"')
 running = True
-wordList = []
-num = int(input())
+final_str = []
+
 
 while running:
-        def reverse(num):
-            for letter in something:
-                if letter != forbidden:
-                    add = True
-                    # add is used to put the input into a list without the forbidden characters
-                if add:
-                    add = wordList.append(letter)
-                    continue
-                elif letter == forbidden:
-                    add = False
-                return wordList[::-1]
-        def is_palindrome(something):
-            return wordList == reverse(num)
+    # Program to check if a string is palindrome or not
 
-        something = input("Enter text: ")
-        if is_palindrome(something):
-            print("Yes, this is a palindrome")
-        else:
-            print("No, it is not a palindrome")
+    my_str = input('Enter Text: ')
+
+    # make it suitable for caseless comparison
+    my_str = my_str.casefold()
+
+    # make it suitable for comparison without the contents of forbidden
+    f = forbidden
+    for f in my_str:
+        if f != forbidden:
+            final_str.append(f)
+
+    # reverse the string
+    rev_str = reversed(final_str)
+
+    # check if the string is equal to its reverse
+    if list(final_str) == list(rev_str):
+        print("Yes, this is a palindrome.")
+    else:
+        print("No, this is not a palindrome.")
