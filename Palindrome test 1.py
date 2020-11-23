@@ -12,7 +12,7 @@ while running:
 
     final_str = []
 
-    # make it suitable for comparison without the contents of forbidden
+    # take the letters in my_str and add them to final_str
     for letter in my_str:
         final_str.append(letter)
 
