@@ -2,7 +2,6 @@ forbidden = ('!', '?', '.', '...', '"', ' ')
 running = True
 letter = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
           'w', 'x', 'y', 'z')
-godList = forbidden + letter
 
 while running:
     # Program to check if a string is palindrome or not
@@ -14,9 +13,9 @@ while running:
     final_str = []
 
     # make it suitable for comparison without the contents of forbidden
-    for godList in my_str:
-        if godList != forbidden:
-            final_str.append(godList)
+    for letter in my_str:
+        if letter != forbidden:
+            final_str.append(letter)
 
     # reverse the string
     rev_str = reversed(final_str)
