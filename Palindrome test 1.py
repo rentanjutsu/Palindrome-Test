@@ -1,5 +1,8 @@
 forbidden = ('!', '?', '.', '...', '"', ' ')
+f = forbidden
+
 running = True
+
 letter = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
           'w', 'x', 'y', 'z')
 L = letter
@@ -14,8 +17,9 @@ while running:
     final_str = []
 
     # take the letters in my_str and add them to final_str
-    for L in my_str:
-        final_str.append(L)
+    for L in list(my_str):
+        if L != f:
+            final_str.append(L)
     else:
         pass
     print(final_str)
