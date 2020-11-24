@@ -1,5 +1,5 @@
 forbidden = ('!', '?', '.', '...', '"', ' ')
-f = forbidden[::]
+f = forbidden
 
 running = True
 
@@ -17,14 +17,14 @@ while running:
     final_str = []
 
     # take the letters in my_str and add them to final_str
-    for L in my_str[::1]:
+    for L in my_str:
         if L != f:
             final_str.append(L)
     else:
         pass
     print(final_str)
 
-    
+
     # reverse the string
     rev_str = reversed(final_str)
 
