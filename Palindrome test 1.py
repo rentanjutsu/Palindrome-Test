@@ -24,7 +24,6 @@ while running:
         pass
     print(final_str)
 
-
     # reverse the string
     rev_str = reversed(final_str)
 
