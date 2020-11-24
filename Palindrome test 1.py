@@ -2,6 +2,7 @@ forbidden = ('!', '?', '.', '...', '"', ' ')
 running = True
 letter = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
           'w', 'x', 'y', 'z')
+L = letter
 
 while running:
     # Program to check if a string is palindrome or not
@@ -13,7 +14,7 @@ while running:
     final_str = []
 
     # take the letters in my_str and add them to final_str
-    for letter in my_str:
+    for L in my_str:
         final_str.append(letter)
 
     # reverse the string
