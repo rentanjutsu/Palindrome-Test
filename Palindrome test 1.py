@@ -15,8 +15,10 @@ while running:
 
     # take the letters in my_str and add them to final_str
     for L in my_str:
-        final_str.append(letter)
-
+        final_str.append(L)
+    else:
+        pass
+    print(final_str)
     # reverse the string
     rev_str = reversed(final_str)
 
