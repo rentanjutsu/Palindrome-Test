@@ -1,4 +1,4 @@
-forbidden = ('!', '?', '.', '...', '"', ' ')
+forbidden = ('!', '?', '.', '...', '"', ' ', ',')
 f = forbidden
 
 running = True
@@ -18,7 +18,7 @@ while running:
 
     # take the letters in my_str and add them to final_str
     for L in my_str:
-        if L != f:
+        if L not in f:
             final_str.append(L)
     else:
         pass
