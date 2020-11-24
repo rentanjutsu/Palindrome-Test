@@ -17,7 +17,7 @@ while running:
     final_str = []
 
     # take the letters in my_str and add them to final_str
-    for L in list(range(len(my_str))):
+    for L in my_str:
         if L != f:
             final_str.append(L)
     else:
