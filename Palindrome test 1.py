@@ -1,11 +1,11 @@
 forbidden = ('!', '?', '.', '...', '"', ' ')
-f = forbidden
+f = forbidden[::]
 
 running = True
 
 letter = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
           'w', 'x', 'y', 'z')
-L = letter
+L = letter[::]
 
 while running:
     # Program to check if a string is palindrome or not
@@ -23,6 +23,8 @@ while running:
     else:
         pass
     print(final_str)
+
+
     # reverse the string
     rev_str = reversed(final_str)
 
